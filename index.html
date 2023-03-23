@@ -37,7 +37,7 @@
 
     justify-content: center;
 
-    background-image: url("./background.jpeg");
+    background-image: url("./background.jpg");
 
    }
 
@@ -204,8 +204,9 @@ opacity: 0;
     background-image: url("./img4.png");
 
    }
-	     
-	      @keyframes rtanee {
+		 
+		  /**************** 시크릿 코드(CSS) 시작 ****************/
+      @keyframes rtanee {
         0% {
           bottom: 0px;
         }
@@ -308,6 +309,8 @@ opacity: 0;
       }
       /**************** 시크릿 코드(CSS) 종료 ****************/
 
+		 
+		 
   </style>
 	      <script>
       // 텍스트가 보여지는 기능
@@ -349,7 +352,7 @@ function hideText(number) {
 function alertText(number) {
   alert(`${number}번째 추억이에요! 눌러주셔서 감사합니다 :)`);
 }
-		       /**************** 시크릿 코드(JS) 시작 ****************/
+			   /**************** 시크릿 코드(JS) 시작 ****************/
       function showModal() {
         const modal = document.getElementById("modal");
         modal.style.display = "flex";
@@ -407,5 +410,21 @@ function alertText(number) {
         <p class="f-date">2023.03.22</p>
       </div>
     </div>
+	  <div class="absolute-rtan-area">
+	<img src="./mml.png" onclick="showModal()" />
+</div>
+	  <div id="modal" class="modal-overlay">
+  <div class="modal-window">
+    <div class="close-area" onclick="closeModal()">𝗫</div>
+    <div class="content">
+      <img src="./mml2.png" />
+      <span>체리의 무드가 궁금하다면</span>
+      <span>우리 오늘 여기서 만나볼까요</span>
+      <button onclick="location.href='https://www.instagram.com/loveyousomuchforeverwith'">
+        체리의인스타그램들어가기
+      </button>
+    </div>
+  </div>
+</div>
   </body>
 </html>
